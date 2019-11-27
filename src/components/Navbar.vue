@@ -16,15 +16,6 @@
       </v-toolbar-title>
       <v-tab/>
       <v-flex class="search pt-7">
-        
-      <!-- <v-text-field
-      v-model="searchQuery"
-            prepend-inner-icon="search"
-            label="Search"
-            single-line
-            outlined
-          ></v-text-field> -->
-
          <v-autocomplete 
           dark outlined
           color="white" 
@@ -122,17 +113,6 @@ export default {
   this.availbaleComponents.push(components[i].name);
     }
   },
-  //  computed: {
-  //   filteredResources   (){
-  //     if(this.searchQuery){
-  //     return this.availbaleComponents.filter((item)=>{
-  //       return item.name.toLowerCase().startsWith(this.searchQuery);
-  //     })
-  //     }else{
-  //       return this.availbaleComponents;
-  //     }
-  //   }
-  // },
   methods:{
     routeToComponent(){
      }
