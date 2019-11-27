@@ -12,17 +12,39 @@
       <v-toolbar-title class="text-uppercase white--text">
         <span class="font-weight-light">FIN</span>
         <span>DROP</span>
+    
       </v-toolbar-title>
+      <v-tab/>
+      <v-flex class="search pt-7">
+        
+      <!-- <v-text-field
+      v-model="searchQuery"
+            prepend-inner-icon="search"
+            label="Search"
+            single-line
+            outlined
+          ></v-text-field> -->
+
+         <v-autocomplete 
+          dark outlined
+          color="white" 
+          dense
+          rounded
+          label="Search Component"
+          :items="availbaleComponents"
+          @click="routeToComponent"
+      ></v-autocomplete>
+      </v-flex>
       <v-spacer></v-spacer>
 
       <!-- dropdown menu -->
       <v-menu offset-y>
         <template v-slot:activator="{ on }">
-          <v-btn class="mr-2" depressed v-on="on">
-            <v-icon left>
+          <v-btn class="ma-2"  depressed v-on="on">
+            <span class="font-weight-light">Menu</span>
+             <v-icon class="ml-2" left>
               expand_more
             </v-icon>
-            <span class="font-weight-light">Menu</span>
           </v-btn>
         </template>
         <v-list>
@@ -73,6 +95,7 @@
 
 <script>
 import Popup from "./Popup";
+import components from '@/components.json';
 export default {
   components:{
     Popup
@@ -85,8 +108,39 @@ export default {
         { title: "Home", icon: "home", route: "/" },
         { title: "Components", icon: "widgets", route: "/projects" },
         { title: "Team", icon: "person", route: "/team" }
-      ],  
+      ],
+      results:'',
+      result:[],
+      model:'',
+      components,
+      availbaleComponents:[],
+       searchQuery:'',
     };
+  },
+  created(){
+    for(let i=0;i<components.length;i++){
+  this.availbaleComponents.push(components[i].name);
+    }
+  },
+  //  computed: {
+  //   filteredResources   (){
+  //     if(this.searchQuery){
+  //     return this.availbaleComponents.filter((item)=>{
+  //       return item.name.toLowerCase().startsWith(this.searchQuery);
+  //     })
+  //     }else{
+  //       return this.availbaleComponents;
+  //     }
+  //   }
+  // },
+  methods:{
+    routeToComponent(){
+     }
   }
 };
 </script>
+<style>
+.search{
+  max-width: 25%;
+}
+</style>

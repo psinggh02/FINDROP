@@ -52,42 +52,15 @@
 
 <script>
 import db from '@/fb';
+import components from '@/components.json';
 export default {
   data() {
     return {
-      projects: [
-        {
-          name: "Drawer",
-          issues: "1",
-          status: "complete",
-          desc:
-            "Component Description"
-        },
-        {
-          name: "Modal",
-          issues: "1",
-          status: "complete",
-          desc:
-            "Component Description"
-        },
-        {
-          name: "Steps",
-          issues: "2",
-          status: "ongoing",
-          desc:
-            "Component Description"
-        },
-        {
-          name: "Camera",
-          issues: "2",
-          status: "ongoing",
-          desc:
-            "Component Description"
-        }
-      ]
-    };
+      projects: components
+    }
   },
   created(){
+      
     db.collection('projects').onSnapshot(res =>{
       const changes = res.docChanges();
       changes.forEach(change => {
