@@ -42,7 +42,7 @@
                 small
                 :class="`${project.status} white--text caption my-2`"
                 :to="`/components/${project.id}`"
-              ></v-chip>
+              >Example</v-chip>
             </div>
           </v-col>
         </v-row>
