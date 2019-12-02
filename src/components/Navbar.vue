@@ -1,5 +1,5 @@
 <template >
-  <nav v-if="enableNavbar">
+  <nav  v-if="$route.path!='/'">
     <v-snackbar v-model="snackbar" :timeout="4000" top color="success">
       <span>
         Awesome! You added a new project
@@ -81,7 +81,6 @@
 
 <script>
 import components from '@/components.json';
-import Event from '@/util/event.js';
 export default {
   data() {
     return {
@@ -105,9 +104,6 @@ export default {
     for(let i=0;i<components.length;i++){
   this.availbaleComponents.push(components[i].name);
     }
-     Event.$on("enableNavbar",  arg => {
-     this.enableNavbar=arg;
-    });
   },
   methods:{
     routeToComponent(){

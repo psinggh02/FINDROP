@@ -21,13 +21,32 @@ export default new Router({
       children: [{
         path: 'modal',
         component: () => import('./components/Modal.vue')
-      },{
+      },
+      {
+        path: 'snackbar',
+        component: () => import('./components/Snackbar.vue')
+      },
+      {
+        path: 'drawer',
+        component: () => import('./components/Drawer.vue')
+      },
+      {
+        path: 'step',
+        component: () => import('./components/Step.vue')
+      },
+      {
+        path: 'datePicker',
+        component: () => import('./components/DatePicker.vue')
+      },
+      {
         path: 'menuList',
         component: () => import('./components/MenuList.vue')
-      },{
-        path: 'datepicker',
-        component: () => import('./components/DatePicker.vue')
-      }]      
+      },
+      {
+        path: 'idleTimeout',
+        component: () => import('./components/IdleTimeout.vue')
+      }
+    ]      
     },
     {
       path: '/team',
