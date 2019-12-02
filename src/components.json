@@ -47,5 +47,12 @@
       "status": "created",
       "desc":
         "Component Description"
+    },
+    {
+      "name": "Datepicker",
+      "issues": "1",
+      "status": "complete",
+      "desc":
+        "Date Picker"
     }
   ]

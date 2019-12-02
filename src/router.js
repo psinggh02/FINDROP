@@ -28,5 +28,11 @@ export default new Router({
       name: 'team',
       component: () => import('./views/Team.vue')
     }
+    ,
+    {
+      path: '/datePicker',
+      name: 'datepicker',
+      component: () => import('./components/DatePicker.vue')
+    }
   ]
 })
