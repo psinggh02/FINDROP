@@ -54,5 +54,12 @@
       "status": "complete",
       "desc":
         "Date Picker"
+    },
+    {
+      "name": "Menulist",
+      "issues": "1",
+      "status": "complete",
+      "desc":
+        "Menulist submenu"
     }
   ]
