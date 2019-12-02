@@ -41,6 +41,7 @@
               <v-chip
                 small
                 :class="`${project.status} white--text caption my-2`"
+                :to="`/components/${project.id}`"
               >Example</v-chip>
             </div>
           </v-col>
@@ -51,7 +52,6 @@
 </template>
 
 <script>
-import db from '@/fb';
 import components from '@/components.json';
 export default {
   data() {
@@ -59,22 +59,7 @@ export default {
       projects: components
     }
   },
-  created(){
-      
-    db.collection('projects').onSnapshot(res =>{
-      const changes = res.docChanges();
-      changes.forEach(change => {
-        if(change.type === 'added')
-        {
-          this.projects.push({
-            ...change.doc.data(),
-            id: change.doc.id
-          })
-        }
-      })
-    })
-  },
-  methods: {
+  methods: {   
     sortBy(prop) {
       this.projects.sort((a, b) => (a[prop] < b[prop] ? -1 : 1));
     },

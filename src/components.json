@@ -1,6 +1,7 @@
 [
     {
       "name": "Camera",
+      "id": "camera",
       "issues": "2",
       "status": "ongoing",
       "desc":
@@ -8,6 +9,7 @@
     },
     {
       "name": "Credentials",
+      "id":"credentials",
       "issues": "2",
       "status": "ongoing",
       "desc":
@@ -15,6 +17,7 @@
     },
     {
       "name": "Drawer",
+      "id":"drawer",
       "issues": "1",
       "status": "complete",
       "desc":
@@ -22,6 +25,7 @@
     },
     {
       "name": "IdleTimeout",
+      "id":"idleTimeout",
       "issues": "2",
       "status": "complete",
       "desc":
@@ -29,6 +33,7 @@
     },
     {
       "name": "Modal",
+      "id":"modal",
       "issues": "4",
       "status": "ongoing",
       "desc":
@@ -36,6 +41,7 @@
     },
     {
       "name": "Snackbar",
+      "id":"snackbar",
       "issues": "1",
       "status": "complete",
       "desc":
@@ -43,6 +49,7 @@
     },
      {
       "name": "Steps",
+      "id":"steps",
       "issues": "6",
       "status": "created",
       "desc":

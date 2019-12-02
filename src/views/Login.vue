@@ -97,7 +97,7 @@ export default {
   methods: {
     login() {
       if (this.username === "admin" && this.password === "admin") {
-        this.$router.push({ name: "home" });
+        this.$router.push('home');
         Event.$emit("enableNavbar",true);
       } else {
         this.errorLogin = true;
