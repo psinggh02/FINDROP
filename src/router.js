@@ -21,22 +21,17 @@ export default new Router({
       children: [{
         path: 'modal',
         component: () => import('./components/Modal.vue')
+      },{
+        path: 'menuList',
+        component: () => import('./components/MenuList.vue')
+      },{
+        path: 'datepicker',
+        component: () => import('./components/DatePicker.vue')
       }]      
     },
     {
       path: '/team',
       component: () => import('./views/Team.vue')
-    }
-    ,
-    {
-      path: '/datePicker',
-      name: 'datepicker',
-      component: () => import('./components/DatePicker.vue')
-    },
-    {
-      path: '/menuList',
-      name: 'menulist',
-      component: () => import('./components/MenuList.vue')
     }
   ]
 })
