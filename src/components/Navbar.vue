@@ -63,9 +63,6 @@
             <!-- <div class="white--text">FINDROP</div> -->
           </div>
         </v-col>
-        <v-col cols="12">
-          <Popup @projectAdded="snackbar = true"/>
-        </v-col>
       </v-row>
       <v-list dense>
         <v-list-item color="primary" v-for="item in items" :key="item.title" link :to="item.route">
@@ -83,20 +80,16 @@
 </template>
 
 <script>
-import Popup from "./Popup";
 import components from '@/components.json';
 import Event from '@/util/event.js';
 export default {
-  components:{
-    Popup
-  },
   data() {
     return {
       drawer: false,
       snackbar: false,
       items: [
         { title: "Home", icon: "home", route: "/home" },
-        { title: "Components", icon: "widgets", route: "/projects" },
+        { title: "Components", icon: "widgets", route: "/components" },
         { title: "Team", icon: "person", route: "/team" }
       ],
       results:'',
