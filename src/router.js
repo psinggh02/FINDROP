@@ -33,6 +33,11 @@ export default new Router({
       path: '/datePicker',
       name: 'datepicker',
       component: () => import('./components/DatePicker.vue')
+    },
+    {
+      path: '/menuList',
+      name: 'menulist',
+      component: () => import('./components/MenuList.vue')
     }
   ]
 })
