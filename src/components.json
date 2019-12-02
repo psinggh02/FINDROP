@@ -39,6 +39,7 @@
       "desc":
         "Component Description"
     },
+    
     {
       "name": "Snackbar",
       "id":"snackbar",
@@ -49,9 +50,9 @@
     },
      {
       "name": "Steps",
-      "id":"steps",
-      "issues": "6",
-      "status": "created",
+      "id":"step",
+      "issues": "2",
+      "status": "ongoing",
       "desc":
         "Component Description"
     },
@@ -70,5 +71,13 @@
       "status": "complete",
       "desc":
         "Menulist submenu"
+    },
+	{
+      "name": "IdleTimeout",
+      "id":"idleTimeout",
+      "issues": "1",
+      "status": "complete",
+      "desc":
+        "Idle timeout"
     }
   ]

@@ -76,7 +76,6 @@
 </template>
 <script >
 
-import Event from '@/util/event.js';
 export default {
   data: () => {
     return {
@@ -98,7 +97,6 @@ export default {
     login() {
       if (this.username === "admin" && this.password === "admin") {
         this.$router.push('home');
-        Event.$emit("enableNavbar",true);
       } else {
         this.errorLogin = true;
         this.errorMessage = "Invalid username or password";
