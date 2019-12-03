@@ -1,20 +1,30 @@
 <template>
   <div class="projects">
     <v-card>
-          <h1 class="headline grey--text">Components</h1>
-          <v-card-text>Component Description</v-card-text>
-          <v-card>
-              <router-view></router-view>
-          </v-card>
+          <v-card-text>
+            <vue-markdown>{{componentDesc}}</vue-markdown>
+          </v-card-text>
     </v-card>
+    <v-card>
+        <router-view></router-view>
+    </v-card>    
   </div>
   
 </template>
 
 <script>
+import VueMarkdown from 'vue-markdown';
 
 export default {
-  name: 'Components'
+  name: 'Components',
+  data() {
+    return {
+      componentDesc: this.$route.params.desc
+    }
+  },
+  components: {
+    VueMarkdown
+  }, 
 };
 </script>
 
