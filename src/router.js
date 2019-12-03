@@ -39,12 +39,12 @@ export default new Router({
         component: () => import('./components/DatePicker.vue')
       },
       {
-        path: 'menuList',
-        component: () => import('./components/MenuList.vue')
-      },
-      {
         path: 'idleTimeout',
         component: () => import('./components/IdleTimeout.vue')
+      },
+      {
+        path: 'camera',
+        component: () => import('./components/Camera.vue')
       }
     ]      
     },

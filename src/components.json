@@ -8,14 +8,6 @@
         "Component Description"
     },
     {
-      "name": "Credentials",
-      "id":"credentials",
-      "issues": "2",
-      "status": "ongoing",
-      "desc":
-        "Component Description"
-    },
-    {
       "name": "Drawer",
       "id":"drawer",
       "issues": "1",
@@ -63,21 +55,5 @@
       "status": "complete",
       "desc":
         "Date Picker"
-    },
-    {
-      "name": "Menulist",
-      "id": "menulist",
-      "issues": "1",
-      "status": "complete",
-      "desc":
-        "Menulist submenu"
-    },
-	{
-      "name": "IdleTimeout",
-      "id":"idleTimeout",
-      "issues": "1",
-      "status": "complete",
-      "desc":
-        "Idle timeout"
     }
   ]
