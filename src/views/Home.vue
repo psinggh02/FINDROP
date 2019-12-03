@@ -1,27 +1,6 @@
 <template>
   <div class="home">
-    <!-- <h1 class="headline grey--text">Components</h1> -->
     <v-container class="my-5">
-      <!-- <v-row class="mb-3 ml-1">
-        <v-tooltip bottom>
-          <template v-slot:activator="{ on }">
-            <v-btn small depressed color="grey lighten-4" @click="sortBy('title')" v-on="on">
-              <v-icon left small>folder</v-icon>
-              <span class="caption text-lowercase">By Project Name</span>
-            </v-btn>
-          </template>
-          <span>Ordering by project name</span>
-        </v-tooltip>
-
-        <v-btn small depressed color="grey lighten-4" @click="sortBy('person')">
-          <v-icon left small>person</v-icon>
-          <span class="caption text-lowercase">By Person Name</span>
-        </v-btn>
-        <v-btn small depressed color="grey lighten-4" @click="clear()">
-          <v-icon left small>clear</v-icon>
-          <span class="caption text-lowercase">Clear</span>
-        </v-btn>
-      </v-row> -->
       <v-card flat v-for="project in projects" class="mb-1" :key="project.title">
         <v-row wrap :class="`ma-0 pa-4 project ${project.status}`">
           <v-col xs12 md2>
@@ -41,7 +20,7 @@
               <v-chip
                 small
                 :class="`${project.status} white--text caption my-2`"
-                :to="`/components/${project.id}`"
+                @click="openComponent(project)"
               >Example</v-chip>
             </div>
           </v-col>
@@ -53,6 +32,7 @@
 
 <script>
 import components from '@/components.json';
+import modalDesc from 'raw-loader!@/components/description/modal.txt';
 export default {
   data() {
     return {
@@ -60,6 +40,12 @@ export default {
     }
   },
   methods: {   
+    openComponent(project){
+      this.$router.push({ 
+        name: project.id, 
+        params: {desc: modalDesc} 
+      });
+    },
     sortBy(prop) {
       this.projects.sort((a, b) => (a[prop] < b[prop] ? -1 : 1));
     },

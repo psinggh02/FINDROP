@@ -57,7 +57,7 @@
 
 <script>
 export default {
-  name: 'DCO-Modal',
+  name: 'Modal',
   props: {
     config: {
       type: Object,
