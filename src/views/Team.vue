@@ -44,6 +44,11 @@ export default {
           name: "Pankaj",
           role: "Web designer, SSE",
           url: "https://media.licdn.com/dms/image/C5103AQF2RIwuFkcRoA/profile-displayphoto-shrink_200_200/0?e=1579737600&v=beta&t=anPvPDxOW_0whi_PHBaS2CsfevBDRMpqNdjwxNXArnI"
+        },
+          {
+          name: "Riyaj",
+          role: "Web developer, ASE",
+          url:  "https://media.licdn.com/dms/image/C5103AQHt58Z8_USVYw/profile-displayphoto-shrink_200_200/0?e=1580947200&v=beta&t=gQouL5D6LPM9Hs2JB41pkPJLgesu-dujmk27Q-FUt90"
         }
       ]
     };

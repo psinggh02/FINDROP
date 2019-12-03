@@ -1,0 +1,17 @@
+## Component: DatePicker
+
+##Usage
+
+Inline:  `code`
+
+``` JavaScript
+import findrop from 'findrop';
+
+let datePicker = findrop.datePicker({
+    ...options
+});
+```
+
+``` HTML
+<div>{{datePicker}}</div>
+```

@@ -1,0 +1,17 @@
+## Component: Camera
+
+##Usage
+
+Inline:  `code`
+
+``` JavaScript
+import findrop from 'findrop';
+
+let modal = findrop.camera({
+    ...options
+});
+```
+
+``` HTML
+<div>{{camera}}</div>
+```

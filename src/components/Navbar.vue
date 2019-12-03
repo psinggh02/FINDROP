@@ -7,8 +7,10 @@
       </span>
     </v-snackbar>
     <v-app-bar flat app>
-      <v-app-bar-nav-icon class="white--text" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title class="text-uppercase white--text">
+       
+       <v-app-bar-nav-icon class="white--text" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-icon medium dark  @click="routeToHome();">home</v-icon>
+      <v-toolbar-title class="text-uppercase white--text px-4">
         <span class="font-weight-light">FIN</span>
         <span>DROP</span>
       </v-toolbar-title>
@@ -107,6 +109,9 @@ export default {
   },
   methods:{
     routeToComponent(){
+     },
+     routeToHome(){
+       this.$router.push('/home');
      }
   }
 };
