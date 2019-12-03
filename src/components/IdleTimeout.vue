@@ -28,7 +28,7 @@ import IdleVueComponent from "idle-vue/src/components/Idle.vue";
 import Vue from "vue";
 Vue.component("idle-view", IdleVueComponent);
 const eventsHub = new Vue();
-let customTimeout=4000;
+let customTimeout=2000;
 Vue.use(IdleVue, {
   "eventEmitter": eventsHub,
   "idleTime": customTimeout

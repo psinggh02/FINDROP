@@ -13,7 +13,7 @@
         <span>DROP</span>
       </v-toolbar-title>
       <v-tab/>
-      <v-flex class="search pt-7">
+      <!-- <v-flex class="search pt-7">
          <v-autocomplete 
           dark outlined
           color="white" 
@@ -23,7 +23,7 @@
           :items="availbaleComponents"
           @click="routeToComponent"
       ></v-autocomplete>
-      </v-flex>
+      </v-flex> -->
       <v-spacer></v-spacer>
 
       <!-- dropdown menu -->
