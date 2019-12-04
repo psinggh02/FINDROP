@@ -18,7 +18,9 @@ Steps
 Inline:  `code`
 
 ``` JavaScript
-findrop: 1.2.0
+##In package.json
+
+'findrop': '1.2.0'
 
 import findrop from 'findrop';
 
