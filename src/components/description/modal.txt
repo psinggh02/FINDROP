@@ -1,0 +1,17 @@
+## Component: Modal
+
+##Usage
+
+Inline:  `code`
+
+``` JavaScript
+import findrop from 'findrop';
+
+let modal = findrop.modal({
+    ...options
+});
+```
+
+``` HTML
+<div>{{modal}}</div>
+```

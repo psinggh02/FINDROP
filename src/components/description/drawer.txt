@@ -1,0 +1,17 @@
+## Component: Drawer
+
+##Usage
+
+Inline:  `code`
+
+``` JavaScript
+import findrop from 'findrop';
+
+let drawer = findrop.drawer({
+    ...options
+});
+```
+
+``` HTML
+<div>{{drawer}}</div>
+```

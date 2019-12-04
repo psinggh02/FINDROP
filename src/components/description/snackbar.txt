@@ -1,0 +1,17 @@
+## Component: Snackbar
+
+##Usage
+
+Inline:  `code`
+
+``` JavaScript
+import findrop from 'findrop';
+
+let snackbar = findrop.snackbar({
+    ...options
+});
+```
+
+``` HTML
+<div>{{snackbar}}</div>
+```

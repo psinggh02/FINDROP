@@ -1,0 +1,67 @@
+{
+  "name": "findrop",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve --open",
+    "build": "vue-cli-service build --watch",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@vue/eslint-config-airbnb": "^5.0.0",
+    "babel-polyfill": "^6.26.0",
+    "core-js": "^3.3.2",
+    "date-fns": "^1.30.1",
+    "firebase": "^6.4.0",
+    "idle-vue": "^2.0.5",
+    "material-design-icons-iconfont": "^4.0.4",
+    "travis": "^0.1.1",
+    "vue": "^2.6.10",
+    "vue-markdown": "^2.2.4",
+    "vue-router": "^3.0.3",
+    "vuetify": "^2.0.0-beta.0"
+  },
+  "devDependencies": {
+    "@mdi/font": "^3.6.95",
+    "@vue/cli-plugin-babel": "^4.0.0",
+    "@vue/cli-plugin-eslint": "^4.0.0",
+    "@vue/cli-service": "^4.0.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "material-design-icons-iconfont": "^5.0.1",
+    "raw-loader": "^4.0.0",
+    "sass": "^1.22.10",
+    "sass-loader": "^7.3.1",
+    "vue-cli-plugin-markdown": "^0.1.2",
+    "vue-cli-plugin-vuetify": "^0.6.3",
+    "vue-loader": "^15.7.0",
+    "vue-template-compiler": "^2.6.10",
+    "vuetify-loader": "^1.0.5"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {
+      "no-console": "off"
+    },
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}

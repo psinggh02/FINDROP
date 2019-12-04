@@ -1,0 +1,17 @@
+## Component: IdleTimeout
+
+##Usage
+
+Inline:  `code`
+
+``` JavaScript
+import findrop from 'findrop';
+
+let idleTimeout = findrop.idleTimeout({
+    ...options
+});
+```
+
+``` HTML
+<div>{{idleTimeout}}</div>
+```

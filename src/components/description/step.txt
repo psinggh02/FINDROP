@@ -1,0 +1,17 @@
+## Component: Step
+
+##Usage
+
+Inline:  `code`
+
+``` JavaScript
+import findrop from 'findrop';
+
+let step = findrop.step({
+    ...options
+});
+```
+
+``` HTML
+<div>{{step}}</div>
+```
