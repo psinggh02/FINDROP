@@ -17,7 +17,7 @@ Steps
 
 ## package.json
 ```{
-"findrop": "1.2.0"
+findrop: 1.2.0
 }```
 Inline:  `code`
 
