@@ -15,6 +15,10 @@ Steps
 
 ## Usage
 
+## package.json
+```{
+"findrop": "1.2.0"
+}```
 Inline:  `code`
 
 ``` JavaScript
