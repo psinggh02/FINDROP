@@ -15,13 +15,11 @@ Steps
 
 ## Usage
 
-## package.json
-```{
-findrop: 1.2.0
-}```
 Inline:  `code`
 
 ``` JavaScript
+findrop: 1.2.0
+
 import findrop from 'findrop';
 
 let component_name = findrop.<component_name>({
