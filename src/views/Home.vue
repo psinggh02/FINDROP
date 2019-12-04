@@ -33,6 +33,12 @@
 <script>
 import components from '@/components.json';
 import modalDesc from 'raw-loader!@/components/description/modal.txt';
+import cameraDesc from 'raw-loader!@/components/description/camera.txt';
+import snackbarDesc from 'raw-loader!@/components/description/snackbar.txt';
+import drawerDesc from 'raw-loader!@/components/description/drawer.txt';
+import datePickerDesc from 'raw-loader!@/components/description/datePicker.txt';
+import idleTimeoutDesc from 'raw-loader!@/components/description/idleTimeout.txt';
+import stepDesc from 'raw-loader!@/components/description/step.txt';
 export default {
   data() {
     return {
@@ -41,10 +47,53 @@ export default {
   },
   methods: {   
     openComponent(project){
-      this.$router.push({ 
+      switch(project.id){
+        case 'modal':
+              this.$router.push({ 
         name: project.id, 
-        params: {desc: modalDesc} 
+       params: {desc: modalDesc} 
       });
+        break;
+        case 'camera':
+              this.$router.push({ 
+        name: project.id, 
+       params: {desc: cameraDesc} 
+      });
+        break;
+        case 'snackbar':
+              this.$router.push({ 
+        name: project.id, 
+       params: {desc: snackbarDesc} 
+      });
+        break;
+        case 'drawer':
+              this.$router.push({ 
+        name: project.id, 
+       params: {desc: drawerDesc} 
+      });
+        break;
+        case 'step':
+              this.$router.push({ 
+        name: project.id, 
+       params: {desc: stepDesc} 
+      });
+        break;
+        case 'idleTimeout':
+              this.$router.push({ 
+        name: project.id, 
+       params: {desc: idleTimeoutDesc} 
+      });
+      break;
+        case 'datePicker':
+              this.$router.push({ 
+        name: project.id, 
+       params: {desc: datePickerDesc} 
+      });
+      break;
+
+  default: return 0;
+
+}
     },
     sortBy(prop) {
       this.projects.sort((a, b) => (a[prop] < b[prop] ? -1 : 1));
