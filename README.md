@@ -18,7 +18,7 @@ Steps
 Inline:  `code`
 
 ``` JavaScript
-##In package.json
+In package.json
 
 'findrop': '1.2.0'
 
