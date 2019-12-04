@@ -50,7 +50,7 @@
     },
     {
       "name": "Datepicker",
-      "id": "datepicker",
+      "id": "datePicker",
       "issues": "1",
       "status": "complete",
       "desc":
